@@ -1,7 +1,19 @@
+const fs = require('fs');
+
 const path = require('path');
+
 const notesData = require('../Develop/db/db.json');
 
+
 module.exports = (app) => {
+
+    fs.readFile("Develop/db/db.json", "utf8", (err, data) => {
+
+        if (err) throw err;
+
+        var notes = JSON.parse(data);
+    });
+    
     app.get('/api/notes', (req, res) => res.json(notesData));
 
     app.post('/api/index', (req,res) => {
