@@ -31,12 +31,24 @@ module.exports = (app) => {
             })
         });
 
-        app.delete('/api/notes/:id', function(req, res) {
-            var filteredNotes = notes.filter(note => note.id !== parseInt(req.params.id)); 
-            writeToJsonFile(filteredNotes);
-            notes = filteredNotes;
-            res.json(true);
-        });
+        app.delete('/api/notes/:id', (req, res) => {
+        const id = req.params.id;
+        notes.forEach((n, index) => {
+          if(id == n.id){
+            notes.splice(index,1)
+            const notesCopy = notes.slice();
+            let jsonNotes = JSON.stringify(notesCopy)
+            fs.writeFile("./db/db.json", jsonNotes, function(err) {
+              if (err) {
+                return console.log(err);
+              }
+              console.log("Success!");
+            })
+    
+          }
+        })
+        res.json(true);
+      })
     };
 
 
