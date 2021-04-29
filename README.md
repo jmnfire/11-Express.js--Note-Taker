@@ -41,7 +41,9 @@ jovan.m.nixon@gmail.com
 # Usage
 ![screenshot](public/assets/images/screencapture-localhost-8000-2021-04-27-22_35_02.png)
 
-![screenshot](assets/images/screencapture-file-Users-JovanNixon-Desktop-Homework-05-Third-Party-APIs-Work-Day-Scheduler-index-html-2021-03-18-14_44_12.png)
+![screenshot](public/assets/images/screencapture-localhost-8000-notes-2021-04-28-20_59_27.png)
+
+![screenshot](public/assets/images/localhost-8000-notes-2021-04-28-21_37_11.png)
 
 # Badges
 
