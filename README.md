@@ -41,9 +41,9 @@ jovan.m.nixon@gmail.com
 # Usage
 ![screenshot](public/assets/images/screencapture-localhost-8000-2021-04-27-22_35_02.png)
 
-![screenshot](public/assets/images/screencapture-localhost-8000-notes-2021-04-28-20_59_27.png)
+![screenshot](public/assets/images/8000-notes-2021-04-28-22_22_34.png)
 
-![screenshot](public/assets/images/localhost-8000-notes-2021-04-28-21_37_11.png)
+![screenshot](public/assets/images/8000-notes-2021-04-28-22_20_02.png)
 
 # Badges
 

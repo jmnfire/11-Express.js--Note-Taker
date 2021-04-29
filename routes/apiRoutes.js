@@ -33,9 +33,13 @@ module.exports = (app) => {
 
     app.delete('/api/notes/:id', (req, res, ) => {
         fs.readFile("./db/db.json", "utf8", (err, data) => {
-            console.log('delete', data)
             console.log(req.params.id)
-            fs.writeFile("./db/db.json", jsonNotes, function (err) {
+            var jsonNotes = JSON.parse(data)
+            jsonNotes = jsonNotes.filter(note => {
+                note.id !== req.params.id
+            })
+            res.json(jsonNotes)
+            fs.writeFile("./db/db.json", JSON.stringify(jsonNotes), function (err) {
                 if (err) {
                     return console.log(err);
                 }
