@@ -30,13 +30,12 @@ Contributions are excepted. Fill free to fork.
 ## GitHub User name 
 jmnfire
 ### Link to GitHub:
-https://github.com/jmnfire
-### To access the website
 https://github.com/jmnfire/11-Express.js--Note-Taker
+### To access the website via Heroku
+https://dashboard.heroku.com/apps/rocky-ocean-10109
 ### Email address 
 jovan.m.nixon@gmail.com
-## Heroku 
-https://dashboard.heroku.com/apps/rocky-ocean-10109
+
 
 # Usage
 ![screenshot](public/assets/images/screencapture-localhost-8000-2021-04-27-22_35_02.png)
